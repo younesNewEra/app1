@@ -1,7 +1,7 @@
 // Fallback for using MaterialIcons on Android and web.
 
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { SymbolWeight, SymbolViewProps } from 'expo-symbols';
+import { SymbolViewProps, SymbolWeight } from 'expo-symbols';
 import { ComponentProps } from 'react';
 import { OpaqueColorValue, type StyleProp, type TextStyle } from 'react-native';
 
@@ -18,6 +18,15 @@ const MAPPING = {
   'paperplane.fill': 'send',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
+  // Add mappings for PrayerTimesScreen icons
+  'sunrise': 'wb-sunny', // Material Icons equivalent for sunrise
+  'sun.max': 'wb-sunny', // Material Icons for sun
+  'sun.min': 'wb-sunny', // Use same as sun.max or choose another like 'brightness-low'
+  'sunset': 'wb-sunny', // Material Icons for sunset (limited options, using wb-sunny)
+  'moon.stars': 'nightlight-round', // Material Icons for moon/stars
+  'location.fill': 'location-on', // Material Icons for location
+  'magnifyingglass': 'search', // Material Icons for search
+  'location.slash': 'location-off', // Material Icons for disabled location
 } as IconMapping;
 
 /**
